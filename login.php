@@ -2,13 +2,19 @@
 <body>
 <div class="form-container">
         <h1>TINCAT</h1>
-        <h2>Se connecter</h2>
-        <form action="functions/connectUser.php" method="post">
+        <form action="functions/loginAction.php" method="post">
             <input type="email" placeholder="e-mail" name="email">
             <input type="text" placeholder="pseudo" name="pseudo">
             <input type="password" placeholder="password" name="password">
-            <input type="submit" value="login">
+            <input type="submit" value="Connexion">
         </form>
-        <div class="alert-box"></div>
+        <a href="register.php">Pas de compte ? Inscrivez-vous !</a>
+        <div class="alert-box">
+        <?php
+        if(isset($_GET["message"])){
+            echo $_GET["message"];
+        }
+        ?>
+        </div>
     </div>
 </body>

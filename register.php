@@ -8,8 +8,16 @@
             <input type="text" placeholder="pseudo" name="pseudo">
             <input type="password" placeholder="password" name="password">
             <input type="password" placeholder="confirm_password" name="confirm_password">
-            <input type="submit" value="register">
+            <input type="submit" value="S'inscrire">
         </form>
+        <a href="login.php">Déjà un compte ? Connectez-vous !</a>
+        <div class="alert-box">
+        <?php
+        if(isset($_GET["message"])){
+            echo $_GET["message"];
+        }
+        ?>
+        </div>
     </div>
 </body>
 </html>
