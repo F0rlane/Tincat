@@ -2,6 +2,7 @@
 <body>
 <div class="form-container">
         <h1>TINCAT</h1>
+        <h2>Se connecter</h2>
         <form action="functions/connectUser.php" method="post">
             <input type="email" placeholder="e-mail" name="email">
             <input type="text" placeholder="pseudo" name="pseudo">
